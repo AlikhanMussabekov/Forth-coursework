@@ -5,8 +5,8 @@ include isprime.frt
     = not 
     ( if num != 1 )
     if
-        dup prime
-        ( if prime )
+        dup isprime
+        ( if isprime )
         not 
         if 
             dup >r
@@ -55,12 +55,12 @@ include isprime.frt
 ;
 
 : next_prime ( x -- a )
-    ( a - closest prime num )
+    ( a - closest isprime num )
     repeat
         ( x )
         1 +
         ( increment x )
-        dup prime 
-        ( is increment prime )
+        dup isprime 
+        ( is increment isprime )
     until
 ;

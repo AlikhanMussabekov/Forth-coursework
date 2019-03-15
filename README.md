@@ -2,4 +2,4 @@
   
 Вариант  
 m" Mussabekov" string-hash 3 % .  
-*2*
+* 2 *
